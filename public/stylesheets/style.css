@@ -1,8 +1,31 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* @font-face {
+  font-family: "Italianno Regular"; 
+  src: url('./public/fonts/Italianno-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+} */
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-a {
-  color: #00B7FF;
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Montserrat", Helvetica, Arial, sans-serif; 
+}
+
+h1 {
+  font-family: "Italianno", Helvetica;
+  font-size: 54px;
 }
