@@ -2,7 +2,7 @@ var express = require('express');
 var indexRouter = express.Router();
 
 /* GET home page. */
-indexRouter.get('/index', function(req, res, next){
+indexRouter.get('/', function(req, res, next){
   res.render('index', { title: 'Downtown Donuts' });
 });
 

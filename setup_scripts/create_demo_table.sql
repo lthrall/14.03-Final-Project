@@ -7,3 +7,11 @@ CREATE TABLE IF NOT EXISTS todos (
     task VARCHAR(255) NOT NULL,
     completed BOOLEAN DEFAULT FALSE
 );
+
+CREATE TABLE IF NOT EXISTS reviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    comment VARCHAR(360) NOT NULL
+);
+
+INSERT INTO reviews (comment)
+VALUES ('test comment');

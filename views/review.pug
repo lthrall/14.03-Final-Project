@@ -4,11 +4,11 @@ block content
   h1= title 
   hr
   div(class="navBar")
-    a(href="/index")
+    a(href="/")
       button Home
     a(href="/menu")
       button Menu
-    a(href="https://doordash.com")
+    a(href="https://www.doordash.com")
       button Order Online 
     a(href="/about")
       button About Us 
@@ -18,5 +18,11 @@ block content
   p User Reviews: 
   div(class="info")
     p Lorem ipsum
-    //TODO add item layout
+    each val in reviews
+      li
+        span= val.comment
   hr
+  h2 Add a new review
+  form(method='POST' action='/create')
+    input(type='text', name='comment', id='comment', required)
+    button(type='submit') Post 
