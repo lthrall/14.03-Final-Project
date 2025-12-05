@@ -4,6 +4,9 @@ const { dbMiddleware} = require('./bin/db');
 
 
 const indexRouter = require('./routes/index');
+const menuRouter = require('./routes/menu');
+const reviewRouter = require('./routes/review');
+const aboutRouter = require('./routes/about');
 //add more handlers here
 
 const app = express();
@@ -18,6 +21,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(dbMiddleware);
 app.use('/', indexRouter);
+app.use('/', menuRouter);
+app.use('/', reviewRouter);
+app.use('/', aboutRouter);
 //add more routes here
 
 // catch 404 and forward to error handler

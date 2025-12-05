@@ -1,18 +1,22 @@
-extends layout
+extends layout 
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content 
+  h1= title 
   hr
   div(class="navBar")
     a(href="/index")
       button Home
     a(href="/menu")
       button Menu
-    a(href="https://doordash.com")
+    a(href="https://www.doordash.com")
       button Order Online 
     a(href="/about")
       button About Us 
     a(href="/review")
       button User Reviews
+  hr
+  p About Us: 
+  div(class="info")
+    p Lorem ipsum
+    //TODO add about layout
   hr

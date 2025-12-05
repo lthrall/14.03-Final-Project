@@ -1,8 +1,7 @@
-extends layout
+extends layout 
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content 
+  h1= title 
   hr
   div(class="navBar")
     a(href="/index")
@@ -15,4 +14,9 @@ block content
       button About Us 
     a(href="/review")
       button User Reviews
+  hr
+  p #{title} Menu: 
+  div(class="menu")
+    p Lorem ipsum
+    //TODO add item layout
   hr
