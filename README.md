@@ -1,6 +1,6 @@
-# CS208-full-stack
-
-This is a full-stack application for CS208, built with Node.js, Express, and MariaDB (MySQL). It serves as a template for developing web applications using modern JavaScript practices. Please read the following instructions carefully because some of the setup only needs to be done once. If you are experiencing problems, please refer to the troubleshooting section before requesting assistance or rerunning the setup scripts.
+# 14.03 Final Lab
+This project is built off of the CS208-full-stack template. Please follow the following instructions to set up and 
+use the database, including running the create_demo_table.sql script to allow the review page to function.
 
 # Database Setup
 

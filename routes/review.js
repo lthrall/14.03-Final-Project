@@ -18,6 +18,7 @@ reviewRouter.get('/review', function(req, res, next){
   }
 });
 
+/*Post new comment */
 reviewRouter.post('/create', function (req, res, next) {
     const { comment } = req.body; 
     try {

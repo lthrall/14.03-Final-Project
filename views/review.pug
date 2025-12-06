@@ -1,9 +1,9 @@
 extends layout 
 
 block content 
-  h1= title 
-  hr
   div(class="navBar")
+    img(src="./images/darklogo.png", class="logo")
+    hr
     a(href="/")
       button Home
     a(href="/menu")
@@ -14,15 +14,17 @@ block content
       button About Us 
     a(href="/review")
       button User Reviews
+    hr
   hr
-  p User Reviews: 
+  h2 User Reviews: 
   div(class="info")
-    p Lorem ipsum
     each val in reviews
       li
         span= val.comment
   hr
-  h2 Add a new review
+  h2 Add a comment
   form(method='POST' action='/create')
     input(type='text', name='comment', id='comment', required)
     button(type='submit') Post 
+  hr
+  img(src="./images/lightlogo.png", class="bottomlogo")

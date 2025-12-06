@@ -1,9 +1,9 @@
 extends layout 
 
 block content 
-  h1= title 
-  hr
   div(class="navBar")
+    img(src="./images/darklogo.png", class="logo")
+    hr
     a(href="/")
       button Home
     a(href="/menu")
@@ -14,9 +14,14 @@ block content
       button About Us 
     a(href="/review")
       button User Reviews
-  hr
-  p #{title} Menu: 
+    hr
+  h2 #{title} Menu: 
   div(class="menu")
-    p Lorem ipsum
-    //TODO add item layout
+    img(src="./images/example.jpg", class="menuItem")
+    h2 Menu Item:
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    img(src="./images/example.jpg", class="menuItem")
+    h2 Menu Item 2:
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
   hr
+  img(src="./images/lightlogo.png", class="bottomlogo")

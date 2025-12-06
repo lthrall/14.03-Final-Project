@@ -1,7 +1,7 @@
 var express = require('express');
 var aboutRouter = express.Router();
 
-/* GET home page. */
+/* GET about page. */
 aboutRouter.get('/about', function(req, res, next){
     res.render('about', { title: 'Downtown Donuts'});
 });

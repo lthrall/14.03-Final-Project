@@ -1,17 +1,9 @@
-/* @font-face {
-  font-family: "Italianno Regular"; 
-  src: url('./public/fonts/Italianno-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; 
-} */
 
 .italianno-regular {
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
 
 .montserrat-regular {
   font-family: "Montserrat", sans-serif;
@@ -21,11 +13,76 @@
 }
 
 body {
-  padding: 50px;
   font: 14px "Montserrat", Helvetica, Arial, sans-serif; 
+  background-color: #F7F7F7;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
   font-family: "Italianno", Helvetica;
   font-size: 54px;
+}
+
+hr {
+  border-color: #F7C64A;
+}
+
+p, h2{
+  margin-left: 5px;
+}
+
+h2 {
+  font: 20px "Montserrat", Helvetica, Arial, sans-serif;
+  font-style: bold;
+  font-weight: 500;
+}
+
+li {
+  margin: 8px;
+  padding: 4px;
+  border-top: 1px solid #8C92AC;
+}
+
+button {
+  padding: 15px;
+  margin: 2px;
+  font: 14px "Montserrat", Helvetica, Arial, sans-serif;
+  color: #F7F7F7; 
+  background-color: #10291D;
+  box-shadow: #8C92AC;
+}
+
+button:hover {
+  background-color: #8C92AC;
+  color: #F7F7F7;
+}
+
+.logo {
+  width: 450px;
+  height: auto;
+}
+
+.bottomlogo {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+.navBar {
+  background-color: #10291D;
+  padding: 10px;
+}
+
+.menuItem {
+  margin-left: 5px;
+  margin-top: 30px;
+  width: 200px;
+  height: auto;
+  display: flex;
+}
+
+input[type="text"] {
+  width: 300px;
+  margin: 5px;
 }
