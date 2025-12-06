@@ -8,4 +8,4 @@ CREATE TABLE IF NOT EXISTS reviews (
 );
 
 INSERT INTO reviews (comment)
-VALUES ('test comment');
+VALUES ('Example Comment');
